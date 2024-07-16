@@ -1,6 +1,7 @@
 # 복합 연산자
 y = 10
 y -= 4
+# y = y - 4
 print(y)  # 6
 
 z = 7
@@ -30,6 +31,8 @@ print(1 is True)  # False
 print(2 is 2.0)  # False
 print(1 == True)  # True
 print(2 == 2.0)  # True
+
+
 
 
 # 논리 연산자
