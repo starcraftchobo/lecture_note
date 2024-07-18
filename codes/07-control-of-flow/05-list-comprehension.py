@@ -9,6 +9,12 @@ print(squared_numbers)
 
 
 # 사용 후
+squared_numbers2 = [num**2 for num in numbers]
+squared_numbers2 = list(num**2 for num in numbers)
+print(squared_numbers2)
+
+
+
 
 
 # List Comprehension 활용 예시 - "2차원 배열 생성 시 (인접행렬 생성 시)"
