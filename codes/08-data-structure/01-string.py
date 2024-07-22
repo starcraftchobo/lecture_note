@@ -1,32 +1,72 @@
 # find
+text = 'banana'
+print(text.find('a'))
+print(text.find('z'))
 
 # index
+print(text.index('a'))
+# print(text.index('z'))
 
 # isupper
+string1 = 'HELLO'
+string2 = 'Hello'
+print(string1.isupper())  # T
+print(string2.isupper())  # F
 
 # islower
+print(string1.islower())  # F
+print(string2.islower())  # F
 
 # isalpha
+string1 = 'Hello'
+string2 = '123heis98576ssh'
+print(string1.isalpha())  # T
+print(string2.isalpha())  # F
+
 
 # replace
-text = 'Hello, world!'
+text = 'Hello, world! world world'
+new_text = text.replace('world', 'Python', 1)
+print(new_text)  # Hello, Python!
 
 # strip
 text = '  Hello, world!  '
+new_text = text.strip()
+print(new_text)
 
 # split
 text = 'Hello, world!'
+words = text.split(',')
+words2 = text.split()
+print(words)  # ['Hello', ' world!'] 
+print(words2)  # ['Hello,', 'world!'] 
+
 
 # join
 words = ['Hello', 'world!']
+new_text = '-'.join(words)
+print(new_text)  # Hello-world!
 
 # capitalize
 text = 'heLLo, woRld!'
+new_text1 = text.capitalize()
+print(new_text1)  # Hello, world!
 
 # title
+new_text2 = text.title()
+print(new_text2)  # Hello, World!
+
 # upper
+new_text3 = text.upper()
+print(new_text3)  # HELLO, WORLD!
+
 # lower
+new_text4 = text.lower()
+print(new_text4)  # hello, world!
+
 # swapcase
+new_text5 = text.swapcase()
+print(new_text5)  # HEllO, WOrLD!
 
 
 # 참고
