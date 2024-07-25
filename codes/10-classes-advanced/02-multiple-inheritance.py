@@ -21,7 +21,11 @@ class Dad(Person):
         return '아빠가 걷기'
 
 
-class FirstChild:
+class FirstChild(Dad, Mom):
+    def __init__(self, name, age, address):
+        Dad.__init__()
+        
+
     def swim(self):
         return '첫째가 수영'
 

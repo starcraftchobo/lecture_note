@@ -26,8 +26,11 @@ class Person:
         self.email = email
 
 class Student(Person):
-    pass
-
+    def __init__(self, name, age, number, email, student_id, gpa):
+        super().__init__(name, age, number, email)
+        self.student_id = student_id
+        self.gpa = gpa
+        
 
 
 # super 사용 예시 - 다중 상속
@@ -48,4 +51,12 @@ class ParentB:
 
 
 class Child(ParentA, ParentB):
-    pass
+    def __init__(self):
+        super().__init__()
+        self.value_c = 'CHild'
+
+
+child1 = Child()
+print(child1.value_a)
+print(child1.value_c)
+print(child1.value_b)  # AttributeError: 'Child' object has no attribute 'value_b'
